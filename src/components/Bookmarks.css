@@ -1,0 +1,11 @@
+.bookmarks{
+    max-width: 97%;
+    margin: 4rem 0;
+}
+
+.bookmarks>h1{
+    text-align: center;
+}
+.bookmarks>h1>span{
+    color: #ff924a;
+}
