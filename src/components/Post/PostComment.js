@@ -1,11 +1,19 @@
-import { Box, Card, CardContent, Typography } from "@material-ui/core";
-import React from "react";
+import { Box, CardContent, Typography } from "@material-ui/core";
+import React ,{ useEffect}from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const PostComment = ({ avatar, name, comment }) => {
+
+	useEffect(() => {
+		Aos.init({ duration: 1000});
+	}, []);
+
 	return (
-		<CardContent style={{ borderBottom: "1px solid lightgray" }}>
-			<Box display="flex">
-				<div
+		<CardContent data-aos="fade-right" style={{ borderBottom: "1px solid lightgray" }}>
+			<Box display="flex"
+			>
+				<div 
 					style={{
 						backgroundImage: `url(${avatar})`,
 						width: "64px",
@@ -23,8 +31,8 @@ const PostComment = ({ avatar, name, comment }) => {
 					padding="18px"
 					borderRadius="18px"
 				>
-					<Typography variant="h4">{name}</Typography>
-					<Typography variant="p1">{comment}</Typography>
+					<Typography variant="h6">{name}</Typography>
+					<Typography variant="body1">{comment}</Typography>
 				</Box>
 			</Box>
 		</CardContent>

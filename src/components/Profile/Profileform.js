@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React ,{ useState, useEffect}from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import {
 	Box,
 	Dialog,
@@ -13,6 +15,11 @@ import { Button } from "../Button/Button";
 import "../Profile/Profileform.css";
 
 function Profileform(props) {
+
+	useEffect(() => {
+		Aos.init({ duration: 800});
+	}, []);
+
 	const [profile, setProfile] = useState({
 		fistname: "Muumel",
 		lastname: "Narak",
@@ -32,7 +39,7 @@ function Profileform(props) {
 
 	return (
 		<>
-			<div className="pf-wrapper">
+			<div data-aos="fade-up"  className="pf-wrapper">
 				<div className="profile">
 					<Box
 						height="300px"
@@ -115,6 +122,7 @@ function Profileform(props) {
 				open={open}
 				onClose={handleClose}
 				aria-labelledby="form-dialog-title"
+				data-aos="fade-down"
 			>
 				<DialogTitle
 					id="form-dialog-title"

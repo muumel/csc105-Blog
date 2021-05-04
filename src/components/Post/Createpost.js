@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
 import "../Post/Createpost.css";
 
+
 function Createpost() {
+
 	const [input, setInput] = useState("");
 
 	const handleSubmit = (e) => {

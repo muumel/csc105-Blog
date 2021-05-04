@@ -7,23 +7,33 @@ import {
 	IconButton,
 	Typography,
 } from "@material-ui/core";
-import React, { useState } from "react";
+import React, { useState , useEffect}  from "react";
 import ProfilePic from "../../pics/profilepic.jpg";
 import BannerPic from "../../pics/pic-01.jpg";
 import FavouriteButton from "../Button/FavouriteButton";
 import PostComment from "../Post/PostComment";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function Postsection() {
+	useEffect(() => {
+		Aos.init({ duration: 1000});
+	}, []);
 	const [comments, setComments] = useState([]);
+	
 	return (
-		<Box
+		<Box 
 			display="flex"
 			flexDirection="column"
 			maxWidth="1024px"
 			margin="64px auto"
+			data-aos="fade-up" 
 		>
-			<Card elevation={4}>
-				<CardContent>
+			<Card elevation={4} 
+			style={{
+				boaderRadius: "50%"
+			}}>
+				<CardContent >
 					<Box display="flex" alignItems="center" marginBottom="24px">
 						<div
 							style={{

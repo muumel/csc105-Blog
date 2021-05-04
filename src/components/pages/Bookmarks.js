@@ -1,20 +1,27 @@
+import React, { useEffect }  from "react";
 import "../../App.css";
 import CardItem from "../Card/CardItem";
 import "../Bookmarks.css";
 import PostPic1 from "../../pics/pic-01.jpg"
 import PostPic2 from "../../pics/pic-02.jpg"
 import PostPic3 from "../../pics/pic-03.jpg"
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 
 
 function Bookmarks() {
+	useEffect(() => {
+		Aos.init({ duration: 1000});
+	}, []);
+
 	return (
 		<div>
-			<div className="bookmarks">
-				<h1>
+			<div data-aos="fade-right" className="bookmarks">
+				<h1 >
 					Your <span>Bookmarks</span>
 				</h1>
-				<div className="cards__wrapper">
+				<div  className="cards__wrapper">
 					<ul className="cards__items">
 						<CardItem
 							src={PostPic1}

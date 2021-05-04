@@ -1,19 +1,27 @@
-import React from "react";
+import React, { useEffect} from "react";
 import "../Card/Cards.css";
 import CardItem from "../Card/CardItem";
 import PostPic1 from "../../pics/pic-01.jpg"
 import PostPic2 from "../../pics/pic-02.jpg"
 import PostPic3 from "../../pics/pic-03.jpg"
 import PostPic4 from "../../pics/pic-04.jpg"
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 
 function Cards() {
+
+	useEffect(() => {
+		Aos.init({ duration: 1000});
+	}, []);
 	return (
-		<div className="cards">
+		<>
+		<div  className="cards">
+			<div data-aos="fade-up" className="card-trans">
 			<h1>These are our recomended article!</h1>
-			<div className="cards__container">
-				<div className="cards__wrapper">
-					<ul className="cards__items">
+			<div  className="cards__container">
+				<div  className="cards__wrapper">
+					<ul className="cards__items" >
 						<CardItem
 							src={PostPic1}
 							text="Explore the hidden waterfall deep inside the Amazon Jungle"
@@ -40,8 +48,10 @@ function Cards() {
 						/>
 					</ul>
 				</div>
+				</div>
 			</div>
 		</div>
+		</>
 	);
 }
 
