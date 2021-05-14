@@ -1,6 +1,7 @@
 import { Box, CardContent, Typography } from "@material-ui/core";
 import React, { useEffect } from "react";
 <<<<<<< HEAD:frontend/src/components/Post/PostComment.js
+<<<<<<< HEAD:frontend/src/components/Post/PostComment.js
 import "aos/dist/aos.css";
 
 
@@ -8,6 +9,14 @@ const PostComment = ({ username, name, comment }) => {
 	
 	useEffect(() => {
 		
+=======
+import Aos from "aos";
+import "aos/dist/aos.css";
+
+const PostComment = ({ username, name, comment }) => {
+	useEffect(() => {
+		Aos.init({ duration: 1000 });
+>>>>>>> 206c578fa8378c4c03bb2100e7d40cdbb9078125:src/components/Post/PostComment.js
 =======
 import Aos from "aos";
 import "aos/dist/aos.css";

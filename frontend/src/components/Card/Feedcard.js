@@ -2,11 +2,17 @@ import React, { useEffect, useState } from "react";
 import "../Card/Cards.css";
 import CardItem from "./CardItem";
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 206c578fa8378c4c03bb2100e7d40cdbb9078125
 import PostPic1 from "../../pics/pic-01.jpg";
 import PostPic2 from "../../pics/pic-02.jpg";
 import PostPic3 from "../../pics/pic-03.jpg";
 import PostPic4 from "../../pics/pic-04.jpg";
+<<<<<<< HEAD
+>>>>>>> 206c578fa8378c4c03bb2100e7d40cdbb9078125
+=======
 >>>>>>> 206c578fa8378c4c03bb2100e7d40cdbb9078125
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -36,7 +42,11 @@ function Feedcard() {
 			<div className="cards">
 				{Array.from(Array(Math.ceil(data.length / 4)).keys()).map((el) => (
 <<<<<<< HEAD
+<<<<<<< HEAD
 					<div className="cards__container" key= {el}>
+=======
+					<div className="cards__container">
+>>>>>>> 206c578fa8378c4c03bb2100e7d40cdbb9078125
 =======
 					<div className="cards__container">
 >>>>>>> 206c578fa8378c4c03bb2100e7d40cdbb9078125
@@ -47,7 +57,10 @@ function Feedcard() {
 										data[el * 4 + el2] && (
 											<CardItem
 <<<<<<< HEAD
+<<<<<<< HEAD
 											key= {data[el * 4 + el2].title}
+=======
+>>>>>>> 206c578fa8378c4c03bb2100e7d40cdbb9078125
 =======
 >>>>>>> 206c578fa8378c4c03bb2100e7d40cdbb9078125
 												scr={`https://picsum.photos/id/${data[el * 4 + el2].id}/200/300`}

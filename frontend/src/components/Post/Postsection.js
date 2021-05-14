@@ -17,7 +17,10 @@ import PostText from "./PostText";
 import {useParams } from "react-router-dom";
 import axios from "../../utils/axios";
 <<<<<<< HEAD
+<<<<<<< HEAD
 import Cookies from "js-cookie";
+=======
+>>>>>>> 206c578fa8378c4c03bb2100e7d40cdbb9078125
 =======
 >>>>>>> 206c578fa8378c4c03bb2100e7d40cdbb9078125
 
@@ -47,10 +50,13 @@ function Postsection() {
 	}, []);
 	const favorite = () => {
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if (!Cookies.get("token")) {
 			alert("Please Login first!");
 			return;
 		}
+=======
+>>>>>>> 206c578fa8378c4c03bb2100e7d40cdbb9078125
 =======
 >>>>>>> 206c578fa8378c4c03bb2100e7d40cdbb9078125
 		axios

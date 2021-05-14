@@ -68,7 +68,10 @@ function Searchbar() {
                 
                         <CardItem
 <<<<<<< HEAD
+<<<<<<< HEAD
                         key= {el.title}
+=======
+>>>>>>> 206c578fa8378c4c03bb2100e7d40cdbb9078125
 =======
 >>>>>>> 206c578fa8378c4c03bb2100e7d40cdbb9078125
                             scr={`https://picsum.photos/id/${el.id}/200/300`}

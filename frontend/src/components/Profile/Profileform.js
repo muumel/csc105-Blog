@@ -50,6 +50,7 @@ function Profileform(props) {
 	};
 	const handleSubmit = () => {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
 		console.log(profile.firstname)
 		console.log(profile.lastname)
@@ -64,6 +65,8 @@ function Profileform(props) {
 				bio: profile.bio,
 				status: profile.status
 =======
+=======
+>>>>>>> 206c578fa8378c4c03bb2100e7d40cdbb9078125
 		setOpen(false);
 		axios
 			.patch("http://localhost:8080/auth/editprofile", {
@@ -71,6 +74,9 @@ function Profileform(props) {
 				lastname: lastname,
 				bio: bio,
 				status: status,
+<<<<<<< HEAD
+>>>>>>> 206c578fa8378c4c03bb2100e7d40cdbb9078125
+=======
 >>>>>>> 206c578fa8378c4c03bb2100e7d40cdbb9078125
 			})
 			.then((response) => {
@@ -114,7 +120,11 @@ function Profileform(props) {
 							onClick={handleClickOpen}
 						>
 <<<<<<< HEAD
+<<<<<<< HEAD
 							<i className="fas fa-pen"></i>
+=======
+							<i class="fas fa-pen"></i>
+>>>>>>> 206c578fa8378c4c03bb2100e7d40cdbb9078125
 =======
 							<i class="fas fa-pen"></i>
 >>>>>>> 206c578fa8378c4c03bb2100e7d40cdbb9078125
@@ -192,7 +202,10 @@ function Profileform(props) {
 				<DialogContent>
 					<TextField
 <<<<<<< HEAD
+<<<<<<< HEAD
 					name="firstname"
+=======
+>>>>>>> 206c578fa8378c4c03bb2100e7d40cdbb9078125
 =======
 >>>>>>> 206c578fa8378c4c03bb2100e7d40cdbb9078125
 						autoFocus
@@ -200,6 +213,7 @@ function Profileform(props) {
 						id="name"
 						label="Firstname"
 						type="text"
+<<<<<<< HEAD
 <<<<<<< HEAD
 						defaultValue={profile.firstname}
 						fullWidth
@@ -211,16 +225,22 @@ function Profileform(props) {
 					<TextField
 					name="lastname"
 =======
+=======
+>>>>>>> 206c578fa8378c4c03bb2100e7d40cdbb9078125
 						fullWidth
 						onChange={(e) => setFirstname(e.target.value)}
 					/>
 					<TextField
+<<<<<<< HEAD
+>>>>>>> 206c578fa8378c4c03bb2100e7d40cdbb9078125
+=======
 >>>>>>> 206c578fa8378c4c03bb2100e7d40cdbb9078125
 						autoFocus
 						margin="normal"
 						id="name"
 						label="Lastname"
 						type="text"
+<<<<<<< HEAD
 <<<<<<< HEAD
 						defaultValue={profile.lastname}
 						fullWidth
@@ -232,10 +252,15 @@ function Profileform(props) {
 					<TextField
 					name="bio"
 =======
+=======
+>>>>>>> 206c578fa8378c4c03bb2100e7d40cdbb9078125
 						fullWidth
 						onChange={(e) => setLastname(e.target.value)}
 					/>
 					<TextField
+<<<<<<< HEAD
+>>>>>>> 206c578fa8378c4c03bb2100e7d40cdbb9078125
+=======
 >>>>>>> 206c578fa8378c4c03bb2100e7d40cdbb9078125
 						autoFocus
 						margin="normal"
@@ -243,6 +268,7 @@ function Profileform(props) {
 						label="Bio"
 						type="text"
 						fullWidth
+<<<<<<< HEAD
 <<<<<<< HEAD
 						defaultValue={profile.bio}
 						onChange={(e) => {
@@ -257,11 +283,17 @@ function Profileform(props) {
 					/>
 					<TextField
 >>>>>>> 206c578fa8378c4c03bb2100e7d40cdbb9078125
+=======
+						onChange={(e) => setBio(e.target.value)}
+					/>
+					<TextField
+>>>>>>> 206c578fa8378c4c03bb2100e7d40cdbb9078125
 						autoFocus
 						margin="normal"
 						id="name"
 						label="Status"
 						type="text"
+<<<<<<< HEAD
 <<<<<<< HEAD
 						defaultValue={profile.status}
 						fullWidth
@@ -269,6 +301,10 @@ function Profileform(props) {
 							console.log(e.target.name)
 							setProfile({...profile,[e.target.name]: e.target.value})
 						} }
+=======
+						fullWidth
+						onChange={(e) => setStatus(e.target.value)}
+>>>>>>> 206c578fa8378c4c03bb2100e7d40cdbb9078125
 =======
 						fullWidth
 						onChange={(e) => setStatus(e.target.value)}

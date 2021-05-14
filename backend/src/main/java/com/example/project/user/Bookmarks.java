@@ -23,6 +23,7 @@ public class Bookmarks{
             String user_id = JwtUtils.parseToken(token);
             Connection connection = MySQLConnector.getConnection();
 <<<<<<< HEAD:backend/src/main/java/com/example/project/user/Bookmarks.java
+<<<<<<< HEAD:backend/src/main/java/com/example/project/user/Bookmarks.java
             PreparedStatement pstm_check = connection.prepareStatement("SELECT * FROM bookmarks WHERE post_id =? AND user_id =?");
             pstm_check.setString(1, bookmarks.getPost_id());
             pstm_check.setInt(2,Integer.parseInt(user_id));
@@ -35,6 +36,10 @@ public class Bookmarks{
             }
 
 
+=======
+
+
+>>>>>>> 206c578fa8378c4c03bb2100e7d40cdbb9078125:105project/src/main/java/com/example/project/user/Bookmarks.java
 =======
 
 
